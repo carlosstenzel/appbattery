@@ -3,7 +3,12 @@ CACHE MANIFEST
 
 /index.html
 /css/base.css
-
+/images/logo128.png
+/images/logo16.png
+/images/logo32.png
+/images/logo48.png
+/images/logo60.png
+/images/logo64.png
 
 NETWORK:
 *
