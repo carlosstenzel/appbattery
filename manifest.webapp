@@ -5,7 +5,7 @@
     "description": "Battery status",
  
     "icons": {
-        "16": " /appbattery/images/logo16.png",
+        "16": "/appbattery/images/logo16.png",
         "32": "/appbattery/images/logo32.png",
         "48": "/appbattery/images/logo48.png",
         "64": "/appbattery/images/logo64.png",
