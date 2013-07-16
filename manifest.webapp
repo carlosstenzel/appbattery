@@ -9,7 +9,7 @@
         "32": "/appbattery/images/logo32.png",
         "48": "/appbattery/images/logo48.png",
         "64": "/appbattery/images/logo64.png",
-        "128": "/appbattery/appbattery/images/logo128.png"
+        "128": "/appbattery/images/logo128.png"
     },
     "developer": {
         "name": "Carlos Stenzel",
