@@ -1,15 +1,15 @@
 {
     "version": "1",
     "name": "Battery",
-    "launch_path": "/index.html",
+    "launch_path": "/appbattery/index.html",
     "description": "Battery status",
-  
+    "type" : "privileged",
     "icons": {
-        "16": "/images/logo16.png",
-        "32": "/images/logo32.png",
-        "48": "/images/logo48.png",
-        "64": "/images/logo64.png",
-        "128": "/images/logo128.png"
+        "16": "/appbatter/images/logo16.png",
+        "32": "/appbatter/images/logo32.png",
+        "48": "/appbatter/images/logo48.png",
+        "64": "/appbatter/images/logo64.png",
+        "128": "/appbatter/images/logo128.png"
     },
     "developer": {
         "name": "Carlos Stenzel",
