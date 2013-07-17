@@ -12,12 +12,12 @@
     
      
     
-    <title>Status Battery</title>
+    <title>Status<br> Battery</title>
 </head>
 
 <body >
 
-<h1  >Status <br> Battery</h1>
+<h1  >Status Battery</h1>
 <br>
 
 <input id="bater" class="knob" data-fgColor="#8c7853" data-thickness=".2" data-readOnly=true value="">
