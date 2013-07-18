@@ -1,41 +1,15 @@
 body{
-background-color: #d0d0d0;
-color: #000;
+background-color: #181818;
+color: #fff;
 }
 h1{
 text-align: center;
 line-height: 40%;
 }
-/* battery indicator */
-#indicator {
-  border: 2px solid #999;
-  text-align: center;
-  font-weight: bold;
-  margin: 20px 0;
-  color: #fff;
-}
-#indicator span {
-  padding: 20px 0;
-  background: red;
-  display: block;
 
-  transition-property: all;
-  transition-duration: 2s;
+.meio{
+margin: auto;
+width: 100%;text-align: center;
+
 }
 
-#indicator.charging {
-  border-color: gold;
-}
-#indicator.charging span {
-  background: green;
-}
-
-.container:before, .container:after {
-    content: "\0020";
-    display: block;
-    height: 0;
-    overflow: hidden;
-}
-.container:after {
-    clear: both;
-}

@@ -29,80 +29,42 @@ else {
     console.log("Open Web Apps not supported");
 }
 
-function atualizabate() {
+
+ 
+
+$(document).ready(function() {
+	function mudacor() {}
+var colornova = '#fd7700';
+ $('.dial').val(0).trigger('change').delay(100);
+$(".dial").knob({
+    'min':0,
+    'max':100,
+    'readOnly': true,
+    'width': 300,
+    'height': 300,
+    'fgColor': colornova,
+    'dynamicDraw': true,
+    'thickness': 0.2,
+    'tickColorizeValues': true,
+    'skin':'tron',
+    'cursor': false
+})         
+ 
  var battery = navigator.battery || navigator.mozBattery || navigator.webkitBattery,
           indicator, indicatorPercentage;
           
           var numerooo = battery.level * 100;
           level = numerooo.toFixed(2);
-          document.getElementById('bater').value = level ;
-}
- 
-//setTimeout("atualizabate()", 1);
-$(document).ready(function() {
-	var refreshId = setInterval("atualizabate()", 0);
- //setTimeout("atualizabate()", 1);
-	//atualizabate();
+     
+
+    var tmr = self.setInterval(function(){myDelay()},1000);
+    function myDelay(){
+        
+        $('.dial').val(level).trigger('change');
+        
+    }    
 
 });
-$(function($) {
 
-                $(".knob").knob({
-                    change : function (value) {
-                        //console.log("change : " + value);
-                    },
-                    release : function (value) {
-                        //console.log(this.$.attr('value'));
-                        console.log("release : " + value);
-                    },
-                    cancel : function () {
-                        console.log("cancel : ", this);
-                    },
-                    draw : function () {
-
-                        // "tron" case
-                        if(this.$.data('skin') == 'tron') {
-
-                            var a = this.angle(this.cv)  // Angle
-                                , sa = this.startAngle          // Previous start angle
-                                , sat = this.startAngle         // Start angle
-                                , ea                            // Previous end angle
-                                , eat = sat + a                 // End angle
-                                , r = 1;
-
-                            this.g.lineWidth = this.lineWidth;
-
-                            this.o.cursor
-                                && (sat = eat - 0.3)
-                                && (eat = eat + 0.3);
-
-                            if (this.o.displayPrevious) {
-                                ea = this.startAngle + this.angle(this.v);
-                                this.o.cursor
-                                    && (sa = ea - 0.3)
-                                    && (ea = ea + 0.3);
-                                this.g.beginPath();
-                                this.g.strokeStyle = this.pColor;
-                                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
-                                this.g.stroke();
-                            }
-
-                            this.g.beginPath();
-                            this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
-                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
-                            this.g.stroke();
-
-                            this.g.lineWidth = 2;
-                            this.g.beginPath();
-                            this.g.strokeStyle = this.o.fgColor;
-                            this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
-                            this.g.stroke();
-
-                            return false;
-                        }
-                    }
-                });
-         
-            });
 
    
